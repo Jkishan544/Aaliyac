@@ -1,0 +1,229 @@
+@import url(index.css);
+
+.App {
+  max-width: auto;
+
+}
+
+.font-barlow {
+  font-family: "Barlow", sans-serif;
+}
+
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.font-Arizonia {
+  font-family: "Arizonia", Sans-serif;
+  color: #DEC991;
+}
+
+.font-nunito-sans {
+  font-family: "Nunito Sans", sans-serif;
+
+}
+
+.font-abhaya-libre {
+  font-family: "Abhaya Libre", serif;
+
+}
+
+.font-Abhaya {
+  color: #FFFFFF;
+  font-family: "Abhaya Libre", Sans-serif;
+  font-weight: 600;
+  letter-spacing: 3.6px;
+}
+
+.font-Abhaya1 {
+  font-family: "Abhaya Libre", Sans-serif;
+
+}
+
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+
+}
+
+::selection {
+  background: rgba(255, 68, 0, 0.86);
+  color: black;
+}
+
+.hover:hover {
+  background-color: gray;
+}
+
+.overflow {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.minh {
+  min-height: 32rem;
+}
+
+.input1 {
+  width: 100%;
+  padding: 2px 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 45px;
+}
+
+.submit {
+  width: 100%;
+  color: white;
+  padding: 6px 50px;
+  margin: 6px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.image-wrap {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  height: 38rem;
+
+}
+
+.image-wrap2 {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  height: 78rem;
+
+}
+
+.image-wrap .zoom {
+  width: 100%;
+  animation: move 40s ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.bar1 {
+  display: none;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .bar1 {
+    display: block;
+  }
+
+  .bar2.is-Open {
+    display: block;
+  }
+
+  .bar2 {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+    width: 100%;
+
+  }
+
+  .ver {
+
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+
+  }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+  .submit1 {
+    width: 100%;
+
+    color: white;
+    padding: 12px 50px;
+    margin: 6px 0;
+    border: none;
+    cursor: pointer;
+    font-size: medium
+  }
+
+  .slide {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 38rem;
+
+  }
+}
+
+@keyframes move {
+  0% {
+
+    transform-origin: center center;
+    transform: scale(1.0);
+
+  }
+
+  100% {
+    transform: scale(1.2);
+
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .image-wrap {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 73rem;
+
+  }
+
+}
+
+@media (min-width: 1280px) {
+  .image-wrap {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 38rem;
+
+  }
+}
+
+
+.react-tabs__tab-list {
+  @apply flex;
+}
+
+.react-tabs__tab-list .tabs {
+  @apply bg-slate-100 flex-1 border-0 pb-3 cursor-pointer focus-visible:outline-none transition-colors border-b-transparent;
+}
+
+.react-tabs__tab-list .tabs.react-tabs__tab--selected {
+  @apply border-0 border-b-4 border-b-primary;
+}
